@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
 <!-- tailwind and daisy ui cdn -->
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
-<!-- Google font popping -->
+<!-- Google font poppins -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -26,14 +26,15 @@
       }
     }
   </script>
+
 <!-- custom styles -->
 <style>
-    .font-poppings{
+    .font-poppins{
         font-family: 'Poppins', sans-serif;
     }
 </style>
 </head>
-<body class="font-poppings">
+<body class="font-poppins">
     <header class="md:container md:mx-auto">
         <nav>
             <div class="navbar bg-base-100">
@@ -60,16 +61,30 @@
                   </ul>
                 </div>
                 <div class="">
-                  <a class="btn btn-primary bg-bike-primary text-white">Login</a>
+                  <a class="btn px-8 bg-bike-primary text-white">Login</a>
                 </div>
               </div>
         </nav>
     </header>
+
     <!-- slider or carousel -->
-    <div class="carousel w-full bg-bike-primary-bg">
+    <div class="carousel w-full lg:h-[550px] bg-bike-primary-bg">
         <!-- slide-1 -->
-        <div id="slide1" class="carousel-item relative w-full">
-          <img src="images/slider/bike1.png" class="w-full" />
+        <div id="slide1" class="carousel-item relative w-full ">
+          <div class="flex flex-col lg:flex-row p-4 lg:p-24 ">
+            <div class="space-y-7 flex-1">
+                <h2 class="text-6xl font-bold">
+                  Ride-on R15 V4 <br>
+                  with Smile
+                </h2 flex-1>
+                <p >Amet minim mollit non deserunt ullamco 
+                  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
+                <button class="btn bg-bike-primary text-white">Purchase</button>
+            </div>
+            <div>
+              <img src="images/slider/bike1.png" class="w-full" />
+            </div>
+          </div>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a> 
             <a href="#slide2" class="btn btn-circle">❯</a>
@@ -100,7 +115,8 @@
           </div>
         </div>
       </div>
-    <main>
+
+    <main md:container md:mx-auto>
 
     </main>
     <footer>
