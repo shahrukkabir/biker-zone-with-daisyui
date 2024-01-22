@@ -164,7 +164,7 @@
     </section>
     <!-- latest bikes section -->
     <section class="my-24">
-        <h3 class="text-5xl font-semibold text-center uppercase">
+        <h3 class="text-5xl font-semibold text-center">
           latest Bikes
         </h3>
         <div class="grid gap-4  mt-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -278,16 +278,16 @@
     <section>
       <!-- FAQ section -->
       <section>
-        <h3 class="text-5xl font-semibold text-center mb-12">
+        <h3 class="text-5xl font-semibold text-center">
           Frequently Asked <span class="text-bike-primary ">Questions</span>
         </h3>
-        <div class="hero min-h-screen bg-base-200">
+        <div class="hero ">
           <div class="hero-content flex-col lg:gap-24 lg:flex-row">
             <img src="images/others/faq.png" class=" w-3/4 lg:max-w-sm rounded-lg shadow-2xl" />
             <!-- faq -->
             <div>
               <!-- first question -->
-              <div class="collapse collapse-arrow bg-base-200">
+              <div class="collapse collapse-arrow ">
                 <input type="radio" name="my-accordion-2" checked="checked" /> 
                 <div class="collapse-title text-xl font-medium">
                   What are the most important things I should know about riding a bike?
@@ -297,7 +297,7 @@
                 </div>
               </div>
               <!-- second question -->
-              <div class="collapse collapse-arrow bg-base-200">
+              <div class="collapse collapse-arrow ">
                 <input type="radio" name="my-accordion-2" /> 
                 <div class="collapse-title text-xl font-medium">
                   How can I tell if my helmet is old and I need a new one?
@@ -307,7 +307,7 @@
                 </div>
               </div>
               <!-- third question -->
-              <div class="collapse collapse-arrow bg-base-200">
+              <div class="collapse collapse-arrow ">
                 <input type="radio" name="my-accordion-2" /> 
                 <div class="collapse-title text-xl font-medium">
                   My bike has been in storage is it safe to ride?
@@ -317,7 +317,7 @@
                 </div>
               </div>
               <!-- fourth question -->
-              <div class="collapse collapse-arrow bg-base-200">
+              <div class="collapse collapse-arrow ">
                 <input type="radio" name="my-accordion-2" /> 
                 <div class="collapse-title text-xl font-medium">
                   What rules should I follow when riding my bike?
@@ -333,8 +333,28 @@
     </section>
     </main>
 
-    <footer>
+    <footer class="footer py-10 px-40 mt-20 bg-black text-gray-300">
+      <nav class="">
+        <header class="font-bold">Company</header> 
+        <div class="flex gap-4" >
+          <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        </div>
 
+      </nav>
+      
+      <nav class="">
+        <header class="font-bold">Get the app</header> 
+        <div class="grid grid-cols-1 gap-4  ">
+          <a><img class="w-36" src="images/others/android.png" alt=""></a>
+          <a><img class="w-36" src="images/others/ios.png" alt=""></a>
+          <a></a>
+        </div>
+        <aside class="mt-14">
+          <p>Copyright © 2024 - All right reserved</p>
+        </aside>
+      </nav>
     </footer>
 </body>
 </html>
